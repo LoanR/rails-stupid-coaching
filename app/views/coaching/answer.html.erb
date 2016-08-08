@@ -1,9 +1,25 @@
-<p>
-  <%= @query %>
-</p>
-
-<p>
-  <%= @coach_answer %>
-</p>
-
-<%= link_to "Speak to your coach", ask_path %>
+<div class="wrapper">
+  <div class="dialog">
+    <div class="card">
+      <div class="line"></div>
+      <div class="card-content">
+        <h2>
+          <%= @query %>
+        </h2>
+        <p>- You</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="line"></div>
+      <div class="card-content">
+        <h2>
+          <%= @coach_answer %>
+        </h2>
+        <p>- Your coach</p>
+      </div>
+    </div>
+    <div class="loop text-center">
+      <%= link_to "Speak to your coach", ask_path %>
+    </div>
+  </div>
+</div>

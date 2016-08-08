@@ -2,13 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-form {
-  width: 400px;
-}
 
 .wrapper {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dialog {
+  width: 500px;
+}
+
+.card {
+  display: flex;
+}
+
+.line {
+  width: 3px;
+  margin: 15px;
+  background-color: lightgrey;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.card h2 {
+  margin-top: 0;
 }
